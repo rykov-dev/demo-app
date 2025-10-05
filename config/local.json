@@ -1,0 +1,7 @@
+{
+   "db": {
+      "user": "dev",
+      "database": "projects",
+      "password": "devpassword"
+   }
+}
