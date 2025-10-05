@@ -8,7 +8,7 @@
       Hello, world!
       <script>
          (async function() {
-            const res = fetch('https://demo-app-4f7b.onrender.com/project');
+            const res = await fetch('https://demo-app-4f7b.onrender.com/project');
             const projects = await res.json();
             const resultEl = document.createElement("pre");
             resultEl.innerText = JSON.stringify(projects, null, 3);
