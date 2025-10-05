@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import { getAllProjects } from './methods.js';
 
 const { PORT: port = 3000 } = process.env;
