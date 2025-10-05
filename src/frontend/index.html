@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Demo app</title>
+   </head>
+   <body>
+      Hello, world!
+      <script>
+         (async function() {
+            const res = fetch('https://demo-app-4f7b.onrender.com/project');
+            const projects = await res.json();
+            const resultEl = document.createElement("pre");
+            resultEl.innerText = JSON.stringify(projects, null, 3);
+            document.body.appendChild(resultEl);
+         })();
+      </script>
+   </body>
+</html>
